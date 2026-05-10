@@ -1,53 +1,85 @@
-# 🚀 ZeroG MercuryOne.1 with NebulaFrame 370 & Hydra Bed
-**My Project – Handmade by a Thai Maker 🇹🇭**  
-A personal 3D printer conversion project with CoreXY high-speed performance.
+<div align="center">
+
+# 🚀 ZeroG MercuryOne.1 x NebulaFrame 370 x Hydra Bed
+
+**Handmade by a Thai Maker 🇹🇭**
+
+![CoreXY](https://img.shields.io/badge/Kinematics-CoreXY-red?style=for-the-badge)
+![Klipper](https://img.shields.io/badge/Firmware-Klipper-blue?style=for-the-badge)
+![Enclosure](https://img.shields.io/badge/Frame-Nebula_370-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT_%7C_CC_BY--NC--SA-green?style=for-the-badge)
+
+</div>
 
 ---
 
-## 📂 Project Structure
-hardware/ → STL, Fusion360, Hydra & Nebula parts
-docs/ → Manuals, reports (TH/EN), build notes
-firmware/ → Klipper & config files
-prints/ → Ready-to-print STL/3MF
-media/ → Test videos & previews
+## 📊 System Architecture
+
+```mermaid
+graph TD
+    A[Ender 5 Platform] -->|Conversion| B(ZeroG Mercury One.1 CoreXY)
+    B --> C{Key Upgrades}
+    C -->|Frame & Enclosure| D[NebulaFrame 370]
+    C -->|Bed System| E[Hydra 3-Point Z-Tilt Bed]
+    C -->|Toolhead| F[Orbiter 2.0 + Dual 5015]
+    
+    E -->|Leveling| G[Auto Kinematic Leveling]
+    F -->|Control| H[Klipper + Mainsail/Fluidd]
+```
+
+## ✨ Highlights
+
+| ⚙️ Hardware / System | 📝 Description |
+| :--- | :--- |
+| ⚡ **Motion System** | CoreXY Kinematics (capable of >600mm/s speeds) |
+| 🔥 **Bed Leveling** | Hydra 3-Point Z-Tilt Kinematic Bed System |
+| 🏗️ **Enclosure** | NebulaFrame 370 (Rigid, optimized for ABS/ASA/PC) |
+| 🛠️ **Toolhead** | Custom Mount + Orbiter 2.0 Extruder + Beacon 3D |
 
 ---
 
-## ✨ Features
-- ⚡ CoreXY High-Speed (>600 mm/s capable setup)  
-- 🔥 Hydra Bed System with Z-tilt support  
-- 🏗️ NebulaFrame 370 enclosure for engineering filaments  
-- 🖥️ Klipper + Moonraker + Fluidd workflow  
+## 📂 Repository Map
+
+```mermaid
+mindmap
+  root((Project))
+    Archives
+      [ZIP Packages]
+      [Firmware Configs]
+      [CAD Models]
+    Documents
+      [Build Reports]
+      [Budget Details]
+    File_To_Print
+      (HydraBed)
+      (MercuryXY)
+      (Skirt)
+      (ToolsHead)
+    Manuals
+      [คู่มือการประกอบ.md]
+      [Instruction PDFs]
+    Media
+      [Test Print Videos]
+```
 
 ---
 
-## 📥 Downloads
-Large files such as Fusion360 `.f3d`, ZIP packages, or videos should be placed in the **Releases** section.  
-Check the latest release for CAD models, build packages, and test videos.
+## 🛠️ Quick Start
+
+| Step | Action | Path/Folder |
+| :---: | :--- | :--- |
+| **1️⃣** | **อ่านคู่มือประกอบ** (Read the Guide) | 📖 `Manuals/คู่มือการประกอบโปรเจกต์.md` |
+| **2️⃣** | **สั่งพิมพ์ชิ้นส่วนพลาสติก** (Print Parts)<br>*(แนะนำ ABS/ASA: 4 Walls, 40% Infill)* | 🖨️ `File_To_Print/` |
+| **3️⃣** | **ประกอบชิ้นส่วน และโครงเครื่อง** (Assemble) | 🔧 *ดูตามคู่มือ PDF และไฟล์ CAD* |
+| **4️⃣** | **ติดตั้งเฟิร์มแวร์ & คาลิเบรต** (Firmware) | 💾 `Archives/` (แตกไฟล์ ZIP เฟิร์มแวร์) |
 
 ---
 
-## 🛠️ Getting Started
-1. Clone this repository
-   ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
-   cd <your-repo>
-2. Open docs in /docs for build instructions
-3. Load Fusion360 or STL files from /hardware
-4. Copy firmware configs from /firmware to your Klipper machine
+<div align="center">
 
-📖 Notes
+**🙌 Credits:** 
+[ZeroG Community](https://github.com/ZeroGDesign) | Thai Maker Community
 
-Some documents are in Thai (original build reports).
-Files are Handmade by Thai Maker for community sharing & inspiration.
-Experimental parts may need adjustment before printing.
+*⭐ If you like this project, please give it a star!*
 
-🔐 License
-Code/scripts → MIT
-Design files, documents, CAD → CC BY-NC-SA 4.0
-
-🙌 Credits
-ZeroG / MercuryOne.1 community for reference designs
-
-Thai Maker community for knowledge sharing
-⭐ If you like this project, give it a star to support more handmade maker projects!
+</div>
