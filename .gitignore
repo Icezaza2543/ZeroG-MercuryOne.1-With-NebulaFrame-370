@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Klipper & Moonraker temporary / backup files
+*.gcode
+*.log
+.moonraker.conf.bkp
+printer-*.cfg
+moonraker.conf.backup
